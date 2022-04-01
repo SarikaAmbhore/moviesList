@@ -14,14 +14,16 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Movies List</h2>
-      <div className="card">
+      <div className="card-text margin-given">Movies List</div>
+      <div className="grid">
         {movieList.map((res) => {
           return (
-            <div className="card-body">
-              <h5 className="card-title"><b>{(res.movie_name).toUpperCase()}</b></h5>
-              <p className="card-text">{res.rating}</p>
-              <p className="card-text">{res.realeased_date}</p>
+            <div className="item">
+              <div className="card-body">
+                <h5 className="card-title">{res.movie_name}</h5>
+                <p className="card-text">Rating: {res.rating}</p>
+                <p className="card-text">Released Date: {res.realeased_date}</p>
+              </div>
             </div>
           )
         })}
