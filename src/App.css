@@ -1,0 +1,14 @@
+.card-body {
+  margin: 10px;
+  border: 1px solid black;
+  width: 200px;
+}
+
+.card-deck .card {
+  max-width: calc(25%);
+}
+
+.App {
+  align-items: center;
+  margin-left: 150px;
+}
